@@ -10,7 +10,7 @@ The time complexity of this program depends on the number of possible passwords 
 
 ## System Requirements
 
-- Python 3.x
-- RAM: 16GB or more (Recommended)
+- Python 3.10
+- RAM: 12GB or more (Recommended)
 
 Please ensure that your system meets the minimum RAM requirement of 16GB to ensure smooth execution of the program, especially for larger password lengths.
