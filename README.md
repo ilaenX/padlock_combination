@@ -6,11 +6,9 @@ The "Password Combination Generator for Padlock" is a Python tool designed to he
 
 ## Time Complexity
 
-The time complexity of this program depends on the number of possible passwords generated and the length of the remembered portion. The generation process involves combinations and permutations, resulting in a time complexity of approximately O(C(n, r) * (n - r)!), where n is the range of numbers (1 to 50) and r is the length of the remembered portion. While execution time may vary based on input parameters, the program is optimized for relatively small password lengths and remembered portions.
+The time complexity of the generate_padlock_passwords function in the optimized code depends on two cases. When the user doesn't remember any digits, the code generates all combinations of the desired password length from the range of numbers [1, 50]. This operation's time complexity is proportional to the number of combinations, which is approximately 19600. In the scenario where the user recalls some digits but not their positions, the code generates all permutations of the remembered digits combined with the remaining numbers. The maximum number of remembered digits is 3, and the remaining numbers can be at most 47. This results in a maximum of 114600 permutations. In both cases, generating each combination or permutation takes O(length) time. Considering these factors, the overall time complexity of the function can be approximated as O(N^3), where N is the range of numbers, specifically 50 in this context.
 
 ## System Requirements
 
 - Python 3.10
 - RAM: 12GB or more (Recommended)
-
-Please ensure that your system meets the minimum RAM requirement of 16GB to ensure smooth execution of the program, especially for larger password lengths.
